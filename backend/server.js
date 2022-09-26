@@ -34,6 +34,11 @@ app.get('/', (req, res) => {
     res.status(200).send('Server Connected');
 });
 
+
+if(process.env.NODE_ENV == "production") {
+    app.use(express.static("../frontend/build"))
+}
+
 app.listen(port, () => {
     console.log(`Listening to port at ${port}`);
 });
