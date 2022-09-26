@@ -61,7 +61,7 @@ userRouter.post(
                 from: `CryptoStego <${process.env.HOST}>`,
                 to: createdUser.email,
                 subject: 'Welcome to CryptoStego',
-                html: compiledWelcomeTemplate.render({name: createdUser.name, cryptoStegoLink:"http://localhost:3000"})
+                html: compiledWelcomeTemplate.render({name: createdUser.name, cryptoStegoLink:"https://web--learn.herokuapp.com"})
             };
             sendEmail(mailOptions);
             res.send({
