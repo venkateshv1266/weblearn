@@ -111,7 +111,7 @@ userRouter.post(
         user.verifyEmailToken = randomTokenHashed;
         user.verifyEmailTokenExpires = Date.now() + 10 * 60 * 1000;  //Expires in 10 minutes
         await user.save();
-        const resetURL = `http://localhost:3000/verifyemail/${randomToken}`;
+        const resetURL = `https://web--learn.herokuapp.com/verifyemail/${randomToken}`;
         const mailOptions = {
             from: `CryptoStego <${process.env.HOST}>`,
             to: req.body.email,
@@ -160,7 +160,7 @@ userRouter.post(
         user.passwordResetToken = randomTokenHashed;
         user.passwordResetTokenExpires = Date.now() + 10 * 60 * 1000;  //Expires in 10 minutes
         await user.save();
-        const resetURL = `http://localhost:3000/resetpassword/${randomToken}`;
+        const resetURL = `https://web--learn.herokuapp.com/resetpassword/${randomToken}`;
         const mailOptions = {
             from: `CryptoStego <${process.env.HOST}>`,
             to: req.body.email,
