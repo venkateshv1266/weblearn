@@ -668,6 +668,9 @@ img.large {
 .realworldListContainer ul h3{
   color: #fff;
 }
+.pdflink {
+  font-size: 10px;
+}
 
 @media screen and (max-width: 760) {
   .realworldWrapper {
