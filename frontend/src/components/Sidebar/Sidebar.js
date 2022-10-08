@@ -43,7 +43,7 @@ function Sidebar(props) {
                         className="navLink" 
                         to={props.userInfo ? '/usefulresources' : '/signin?redirect=usefulresources'}
                     >
-                        Userful Resources
+                        Useful Resources
                     </Link>
                 </div>
                 
