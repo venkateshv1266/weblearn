@@ -158,6 +158,7 @@ function UsefulResources(props) {
                                                 <Link className='link' to={{pathname: "https://www.amazon.in/Fundamentals-Web-Development-Randy-Connolly/dp/9332575274"}} target="_blank" >
                                                     <h2>Fundamentals of Web Development</h2>
                                                 </Link>
+                                                <br></br>
                                                 <Link className='link pdflink' to={{pathname: "http://www.gbv.de/dms/tib-ub-hannover/814195423.pdf"}} target="_blank" >
                                                     <h2>PDF Download</h2>
                                                 </Link>
@@ -193,7 +194,7 @@ function UsefulResources(props) {
                                             </div>
                                         </div> 
                                     </form>
-                                    
+                                    <br></br>
                                     <form className="formContent" onSubmit={submitHandler}>
                                         <h1 className="gridColumnHeading">Web Learn - Instagram Pages</h1>
 
