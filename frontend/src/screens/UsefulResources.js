@@ -89,6 +89,7 @@ function UsefulResources(props) {
 
                                         <label htmlFor="stegoImageId">Reference Books </label>
                                         
+                                        
                                         <div className="card">
                                             <div className="flex-child">
                                                 <Link to={{pathname: "https://www.amazon.in/HTML-CSS-Design-Build-Websites/dp/1118008189"}} target="_blank" >
@@ -100,6 +101,11 @@ function UsefulResources(props) {
                                                 <Link className='link' to={{pathname: "https://www.amazon.in/HTML-CSS-Design-Build-Websites/dp/1118008189"}} target="_blank" >
                                                     <h2>HTML & CSS: Design and Build Web Sites</h2>
                                                 </Link>
+                                                <br></br>
+                                                <Link className='link pdflink' to={{pathname: "https://www.pdfdrive.com/download.pdf?id=9599066&h=f2f231b39e648d7db773fe8c02e87132&u=cache&ext=pdf"}} target="_blank" >
+                                                    <h2>PDF Download</h2>
+                                                </Link>
+                                                
                                             </div>
                                         </div>   
 
@@ -109,11 +115,16 @@ function UsefulResources(props) {
                                                 <Link  to={{pathname: "https://www.amazon.in/JavaScript-JQuery-Interactive-Front-End-Development/dp/1118531647"}} target="_blank" >
                                                     <img className="small" src="https://images-na.ssl-images-amazon.com/images/I/71viHxTLKgL.jpg" alt="product"/>
                                                 </Link>
+                                                
                                             </div>
                                             
                                             <div className="card-body flex-child">
                                                 <Link className='link' to={{pathname: "https://www.amazon.in/JavaScript-JQuery-Interactive-Front-End-Development/dp/1118531647"}} target="_blank" >
                                                     <h2>JavaScript and JQuery: Interactive Front-End Web Development</h2>
+                                                </Link>
+                                                <br></br>
+                                                <Link className='link pdflink' to={{pathname: "https://www.pdfdrive.com/download.pdf?id=195248768&h=5317c882f2047cc8fb3ca83e74b2fd3c&u=cache&ext=pdf"}} target="_blank" >
+                                                    <h2>PDF Download</h2>
                                                 </Link>
                                             </div>
                                         </div>   
@@ -129,6 +140,10 @@ function UsefulResources(props) {
                                                 <Link className='link' to={{pathname: "https://www.amazon.in/dp/1839211563/ref=cm_sw_r_apa_i_J21MFAE2RN7T5KGA25T9_0"}} target="_blank" >
                                                     <h2>Responsive Web Design with HTML5 and CSS</h2>
                                                 </Link>
+                                                <br></br>
+                                                <Link className='link pdflink' to={{pathname: "https://org2.knuba.edu.ua/mod/resource/view.php?id=19973"}} target="_blank" >
+                                                    <h2>PDF Download</h2>
+                                                </Link>
                                             </div>
                                         </div> 
 
@@ -142,6 +157,9 @@ function UsefulResources(props) {
                                             <div className="card-body flex-child">
                                                 <Link className='link' to={{pathname: "https://www.amazon.in/Fundamentals-Web-Development-Randy-Connolly/dp/9332575274"}} target="_blank" >
                                                     <h2>Fundamentals of Web Development</h2>
+                                                </Link>
+                                                <Link className='link pdflink' to={{pathname: "http://www.gbv.de/dms/tib-ub-hannover/814195423.pdf"}} target="_blank" >
+                                                    <h2>PDF Download</h2>
                                                 </Link>
                                             </div>
                                         </div>
@@ -176,6 +194,45 @@ function UsefulResources(props) {
                                         </div> 
                                     </form>
                                     
+                                    <form className="formContent" onSubmit={submitHandler}>
+                                        <h1 className="gridColumnHeading">Web Learn - Instagram Pages</h1>
+
+                                        <label htmlFor="stegoImageId">Instagram References </label>
+                                        
+                                        
+                                        <div className="card">
+                                            <div className="card-body flex-child">
+                                                <Link className='link' to={{pathname: "https://www.instagram.com/richwebdeveloper/?hl=en"}} target="_blank" >
+                                                    <h2>@richwebdeveloper</h2>
+                                                </Link>                                                
+                                            </div>
+                                        </div>   
+
+                                        <div className="card">
+                                            <div className="card-body flex-child">
+                                                <Link className='link' to={{pathname: "https://www.instagram.com/webdevelopment24x7/?hl=en"}} target="_blank" >
+                                                    <h2>@webdevelopment24x7</h2>
+                                                </Link>                                                
+                                            </div>
+                                        </div> 
+                                        
+                                        <div className="card">
+                                            <div className="card-body flex-child">
+                                                <Link className='link' to={{pathname: "https://www.instagram.com/lubnadev/?hl=en"}} target="_blank" >
+                                                    <h2>@lubnadev</h2>
+                                                </Link>                                                
+                                            </div>
+                                        </div> 
+                                        <div className="card">
+                                            <div className="card-body flex-child">
+                                                <Link className='link' to={{pathname: "https://www.instagram.com/developers_community_._/?hl=en"}} target="_blank" >
+                                                    <h2>@developers_community_</h2>
+                                                </Link>                                                
+                                            </div>
+                                        </div> 
+
+                                    </form>
+
                                 </div>
                                 <div className="column2 column2EncodeDecode">
                                     <form className="formContent" onSubmit={submitHandler}>
