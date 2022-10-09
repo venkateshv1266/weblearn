@@ -24,7 +24,7 @@ sendEmailRouter.post(
         const secretKey = CryptoJS.AES.decrypt(req.body.secretKey, 'this-is-my-ultra-large-secret-key!!!').toString(CryptoJS.enc.Utf8);
         const mailOptions = {
             to: req.body.recipientEmail,
-            from: `CryptoStego <${process.env.HOST}>`,
+            from: `WebLearn <${process.env.HOST}>`,
             subject: 'Encoded Message', 
             text: 'Encoded Message',
             html: compiledTemplate.render({secretKey, stegoImageID: req.body.stegoImageID, cryptoStegoLink:"https://web--learn.herokuapp.com"})
