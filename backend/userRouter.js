@@ -58,9 +58,9 @@ userRouter.post(
         try {
             const createdUser = await newUser.save();
             const mailOptions = {
-                from: `CryptoStego <${process.env.HOST}>`,
+                from: `WebLearn <${process.env.HOST}>`,
                 to: createdUser.email,
-                subject: 'Welcome to CryptoStego',
+                subject: 'Welcome to WebLearn',
                 html: compiledWelcomeTemplate.render({name: createdUser.name, cryptoStegoLink:"https://web--learn.herokuapp.com"})
             };
             sendEmail(mailOptions);
@@ -87,9 +87,9 @@ userRouter.post(
         try{
             const createdUser = await user.save(); //Now data is saved in mongo db
             const mailOptions = {
-                from: `CryptoStego <${process.env.HOST}>`,
+                from: `WebLearn <${process.env.HOST}>`,
                 to: createdUser.email,
-                subject: 'Welcome to CryptoStego',
+                subject: 'Welcome to WebLearn',
                 html: compiledWelcomeTemplate.render({name: createdUser.name, cryptoStegoLink:"https://web--learn.herokuapp.com"})
             };
             sendEmail(mailOptions);
@@ -113,7 +113,7 @@ userRouter.post(
         await user.save();
         const resetURL = `https://web--learn.herokuapp.com/verifyemail/${randomToken}`;
         const mailOptions = {
-            from: `CryptoStego <${process.env.HOST}>`,
+            from: `WebLearn <${process.env.HOST}>`,
             to: req.body.email,
             subject: 'Verify your email',
             html: compiledVerifyEmailTemplate.render({name: user.name, verifyEmailLink: resetURL})
@@ -162,7 +162,7 @@ userRouter.post(
         await user.save();
         const resetURL = `https://web--learn.herokuapp.com/resetpassword/${randomToken}`;
         const mailOptions = {
-            from: `CryptoStego <${process.env.HOST}>`,
+            from: `WebLearn <${process.env.HOST}>`,
             to: req.body.email,
             subject: 'Reset Password Link',
             html: compiledResetPasswordTemplate.render({name: user.name, resetPasswordLink: resetURL})
